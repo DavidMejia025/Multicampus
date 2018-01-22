@@ -10,6 +10,133 @@
   border-radius: 50%;
 }
 
-img {
-	width:100px;
+body {
+  font-family: "Roboto", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 28px;
+  font-weight: 300;
+  color: #85919d;
+  height: 100%;
+  position: relative;
+}
+/*------------------------------Navigation bars-------------------------------*/
+.navbar.navbar-inverse{
+  display:flex;
+  justify-content:space-between;
+  align-items: center; 
+  background-color: #2e3537;
+  margin-bottom: 0;
+}
+.navbar.navbar-inverse ul{
+  display:flex;
+  flex-direction: row;;
+}
+.navbar li{
+  color: white;
+  margin: 5px;
+} 
+.navbar ul {
+  list-style-type: none;
+}
+
+.navbar.navbar-default,
+.nav.navbar-nav li a{
+  margin: 0;
+  padding:0;
+}
+.nav.navbar-nav{
+  color: #777777;
+  float: right;
+  display: inline-block;
+  margin-right: 20px
+  text-align: right;
+  font-size: 14px;
+  text-decoration: none;
+}
+.nav.navbar-nav li a{
+  margin-top: 20px;
+  color:#777777;
+  text-align: center;
+}
+
+.nav.navbar-nav li a:hover{
+  background-color: #ffffff;
+  color:#222222;
+  font-weight: bold;
+}
+
+.nav.navbar-nav li a.active {
+  background-color: #fed136;
+  color: black;
+}
+
+/*----------------------------------------Home------------------------------------------*/
+
+#HOME{
+  background-attachment: fixed;
+  background-color: transparent;
+  background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ) ,  url('./images/cover2.jpeg') no-repeat center top;
+  background-size: cover;
+  color:white;
+  height: 100%;
+  text-align: center;
+}
+
+#HOME img{
+  border-radius:60%;
+}
+
+.home-central{
+  position: relative;
+  display: inline-block;
+  top:100px;
+}
+@media (min-width: 1281px) {
+   #HOME{
+    height:480px;
+  }
+}
+@media (min-width: 1025px) and (max-width: 1280px) {
+ #HOME{
+  height:700px;
+ }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  
+}
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  
+}
+@media (min-width: 481px) and (max-width: 767px) { 
+  
+}
+@media (min-width: 320px) and (max-width: 480px) {
+}
+
+#HOME .home-learn-more {
+  position: absolute;
+  top: 550px;
+  left: 45%;
+  text-align: center;
+}
+#HOME .home-learn-more a {
+  display: block;
+}
+#HOME .home-learn-more  a {
+  display: block;
+  width: 45px;
+  height: 45px;
+  margin: 5px auto;
+  padding-top:10px;
+  background: #bbbbbb;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  border-radius: 50%;
+}
+#HOME .home-learn-more a .arrow i {
+  top: 10px;
+  position: relative;
+  color: #fff;
+  vertical-align: middle;
 }
