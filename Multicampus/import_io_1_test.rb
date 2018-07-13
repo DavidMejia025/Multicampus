@@ -7,7 +7,7 @@ body = {
       },
       "credentials":{
         "username": "david.mejia@negotiatus.com",
-        "password": "Negotiatus!"
+        "password": "Negotiatus1"
       }
     }
   ]
