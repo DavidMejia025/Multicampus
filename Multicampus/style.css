@@ -78,14 +78,17 @@ body {
   background-color: transparent;
   /*background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ) ,  url('./images/cover2.jpeg') no-repeat center top;*/
   background-size: cover;
-  background-color:#777777;
+  background-color:#eeee;
   color:#44434c;
   height: 100%;
   text-align: center;
   border-top: solid black 1px;
+    margin-bottom:100px;
+
 }
 
 .home-central{
+  margin-top:35px;
   display: flex;
   position: relative;
   top:30px;
@@ -108,13 +111,14 @@ body {
 .home-central2 img{
   margin-top:40px;
   margin-left:70px;
+  border-radius: 60%;
 }
 .home-central2 h1{
   margin-left:70px;
 }
 
 .secondary_info{
-  margin-top:40px;
+  margin-top:65px;
   font-size: 16px
 }
 .secondary_info h2{
@@ -144,29 +148,84 @@ body {
 }
 
 #HOME .home-learn-more {
-  position: absolute;
-  top: 550px;
-  left: 45%;
+  margin-top: 20px;
   text-align: center;
+  font-style: oblique;
+
 }
-#HOME .home-learn-more a {
-  display: block;
+
+/*----------------------------------------About us------------------------------------------*/
+
+#about_us{
+  display:flex; 
+  flex-wrap: wrap;
+
 }
-#HOME .home-learn-more  a {
-  display: block;
-  width: 45px;
-  height: 45px;
-  margin: 5px auto;
-  padding-top:10px;
-  background: #bbbbbb;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  -ms-border-radius: 50%;
-  border-radius: 50%;
+.nuestra_empresa{
+  margin: 0 20px 0 170px;
+  font-size: 17px;
+  width:300px;
+
 }
-#HOME .home-learn-more a .arrow i {
-  top: 10px;
-  position: relative;
-  color: #fff;
-  vertical-align: middle;
+
+.quienes_somos{
+  margin: 0 20px 0 20px;
+  font-size: 17px;
+  width:300px;
+
+}
+
+.experiencia{
+  margin: 0 20px 0 20px;
+  font-size: 17px;
+  width:300px;
+
+}
+.nuestra_empresa p{
+  display:flex;
+  font-style: oblique;
+}
+
+.quienes_somos p{
+  display:none;
+  font-style: oblique;
+}
+
+/*----------------------------------------SERVICES------------------------------------------*/
+#SERVICES .container{
+  display:flex;
+  flex-wrap: wrap;
+  margin: 0 100px 0 100px;
+}
+#SERVICES h1{
+  width:100%;
+    text-align: center;
+
+}
+#SERVICES .container .service1, .service2, .service3, .service4, .service5{
+  margin:60px;
+
+  width: 250px;
+}
+
+#SERVICES .container .service1 p, .service2 p, .service3 p, .service4 p, .service5 p{
+  margin: 40px 10px 40px 10px;
+  font-style: oblique;
+  font-weight: bold
+}
+
+.service1{
+  border: solid blue 3px;
+}
+.service2{
+  border: solid orange 3px;
+}
+.service3{
+  border: solid green 3px;
+}
+.service4{
+  border: solid yellow 3px;
+}
+.service5{
+  border: solid red 3px;
 }
