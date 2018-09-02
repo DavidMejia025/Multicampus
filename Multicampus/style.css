@@ -83,21 +83,29 @@ body {
   height: 100%;
   text-align: center;
   border-top: solid black 1px;
-    margin-bottom:100px;
+  border-bottom: solid black 1px;
+  margin-bottom: 0px;
+  padding-bottom: 550px;
 
 }
 
 .home-central{
   margin-top:35px;
+  margin-left: 210px;
   display: flex;
   position: relative;
   top:30px;
-  margin-left:150px;
+
 }
 
+.home-central.carousel-inner img{
+  height: 350px;
+  width:  400px;
+}
 
 .home-central1{
   width:465px;
+  height: 350px;
 
 }
 .home-central2{
@@ -114,7 +122,9 @@ body {
   border-radius: 60%;
 }
 .home-central2 h1{
-  margin-left:70px;
+  font-family: 'Oswald', sans-serif;
+  font-size:60px;
+  margin-left:40px;
 }
 
 .secondary_info{
@@ -122,8 +132,8 @@ body {
   font-size: 16px
 }
 .secondary_info h2{
-  margin-right: 140px;
-  font-size: 16px
+  margin-left: 100px;
+  font-size: 20px
 }
 @media (min-width: 1281px) {
    #HOME{
@@ -159,7 +169,13 @@ body {
 #about_us{
   display:flex; 
   flex-wrap: wrap;
+  margin:275px 0 275px 0;
 
+}
+.container_about_us {
+  display:flex;
+  flex-wrap:wrap;
+  margin-left:170px;
 }
 .nuestra_empresa{
   margin: 0 20px 0 170px;
@@ -175,14 +191,8 @@ body {
 
 }
 
-.experiencia{
-  margin: 0 20px 0 20px;
-  font-size: 17px;
-  width:300px;
-
-}
 .nuestra_empresa p{
-  display:flex;
+  display:none;
   font-style: oblique;
 }
 
@@ -192,40 +202,33 @@ body {
 }
 
 /*----------------------------------------SERVICES------------------------------------------*/
+#SERVICES {
+  background-size: cover;
+  background-color:#eeee;
+}
 #SERVICES .container{
   display:flex;
   flex-wrap: wrap;
-  margin: 0 100px 0 100px;
+  margin: 60px 0px 0 150px;
 }
 #SERVICES h1{
+  padding-top: 70px;
   width:100%;
     text-align: center;
 
 }
 #SERVICES .container .service1, .service2, .service3, .service4, .service5{
-  margin:60px;
-
+  margin:10px 30px 60px 30px;
+  border: solid grey 2px;
+  background-color: #66b3ff;
   width: 250px;
 }
 
 #SERVICES .container .service1 p, .service2 p, .service3 p, .service4 p, .service5 p{
   margin: 40px 10px 40px 10px;
   font-style: oblique;
-  font-weight: bold
-}
-
-.service1{
-  border: solid blue 3px;
-}
-.service2{
-  border: solid orange 3px;
-}
-.service3{
-  border: solid green 3px;
-}
-.service4{
-  border: solid yellow 3px;
-}
-.service5{
-  border: solid red 3px;
+  font-weight: bold;
+  font-size: 15px;
+  align: justify;
+  color:#64636c;
 }
