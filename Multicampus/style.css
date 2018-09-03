@@ -217,18 +217,31 @@ body {
     text-align: center;
 
 }
-#SERVICES .container .service1, .service2, .service3, .service4, .service5{
-  margin:10px 30px 60px 30px;
+#SERVICES .container .service0, .service1, .service2, .service3, .service4, .service5{
+  margin:10px 30px 20px 30px;
   border: solid grey 2px;
-  background-color: #66b3ff;
+  background-color: #c2d6d6;
   width: 250px;
 }
-
-#SERVICES .container .service1 p, .service2 p, .service3 p, .service4 p, .service5 p{
-  margin: 40px 10px 40px 10px;
+#SERVICES .container .service0 p, .service1 p, .service2 p, .service3 p, .service4 p, .service5 p{
+  margin: 20px 10px 10px 10px;
   font-style: oblique;
   font-weight: bold;
   font-size: 15px;
   align: justify;
-  color:#64636c;
+  color: #004466;
+}
+#SERVICES .container .service0 img, .service2 img, .service3 img, .service4 img, .service5 img{
+   width: 245px;
+}
+.naranja1 img {
+  width: 245px;
+}
+.naranja2 img{
+  width: 180px;
+  height: 220px;
+  margin-left: 20px;
+}
+#SERVICES .container .service1 p{
+  margin-top: 60px;
 }
