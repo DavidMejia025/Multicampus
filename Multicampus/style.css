@@ -164,6 +164,10 @@ body {
 
 }
 
+.carousel-inner img {
+  width: 500px;
+  height: 300px;
+}
 /*----------------------------------------About us------------------------------------------*/
 
 #about_us{
@@ -231,17 +235,91 @@ body {
   align: justify;
   color: #004466;
 }
-#SERVICES .container .service0 img, .service2 img, .service3 img, .service4 img, .service5 img{
+#SERVICES .container .service0 img, .service1 img, .service2 img, .service3 img, .service4 img, .service5 img{
    width: 245px;
+   height: 200px;
 }
-.naranja1 img {
-  width: 245px;
-}
-.naranja2 img{
-  width: 180px;
-  height: 220px;
-  margin-left: 20px;
-}
-#SERVICES .container .service1 p{
-  margin-top: 60px;
+
+.top { 
+      padding:20px;
+    }
+    #container{
+      display:flex;
+      justify-content: space-around;
+      margin: 30px;
+      padding:10px;
+
+    }
+    #container > div{
+
+      padding:80px;
+    }
+    .center{
+      border-right:solid 3px ;
+    }
+    .contactos .list{
+      margin-top:50px;
+     color:#777777;
+     font-size:14px;
+    }
+
+    #contacto {
+      background-color: #dddddd;
+      background-size: cover;
+      background-attachment: fixed;
+      text-align: center;
+    }
+    #contacto h1{
+      text-align: center;
+
+    }
+
+    #contacto h2{
+
+      text-align: center;
+    }
+    #contacto p{
+    text-align: center;
+    font-size: 22px;
+    color: #85919d;
+  }
+  #contacto p a{
+    color:#888888;
+  }
+    form{
+      margin:auto;
+      width: 70%;
+      margin-top: 50px;
+      background-color: #dddddd;
+      
+    }
+    input {
+      display:flex;
+      padding:10px;
+      width: 300px;
+      background-color: #dddddd;
+      height: 40px;
+      color: #004466;
+      justify-content:center;
+      flex-direction:column;
+      flex-wrap:wrap;
+      border-radius: 7px
+
+    }   
+    #submit{
+      margin-left: 100px;
+      margin-top:50;
+      width:100px;
+      border-radius: 3px;
+      padding:10px;
+      padding-left:25px;
+      text-align: center;
+      color: #85919d; 
+      font-size:12px;
+      border-radius: 7px;
+    }
+
+    textarea.form-control {
+      margin:0px;
+    height: 100px;
 }

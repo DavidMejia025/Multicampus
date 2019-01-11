@@ -17,6 +17,8 @@
      <script src="https://use.fontawesome.com/5649ec0678.js"></script>
      <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
      <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+
+     <script src="./app.js"></script>  
  </head>
 <body> 
 <header>
@@ -71,15 +73,21 @@
        <!-- Wrapper for slides -->
        <div class="carousel-inner">
          <div class="item active">
-           <img src="./images/cover2.jpeg"" alt="Los Angeles">
+           <div class="carrousel">
+             <img src="./images/cover2.jpeg" alt="Los Angeles">
+           </div>
          </div>
 
          <div class="item">
-           <img src="./images/cover5.jpg"" alt="Chicago">
+           <div class="carrousel">
+             <img src="./images/cover5.jpg" alt="Chicago" width="250px">
+           </div>
          </div>
 
          <div class="item">
-           <img src="./images/cover4.jpg"" alt="New York">
+          <div class="carrousel">
+            <img src="./images/cover4.jpg" alt="New York">
+          </div>
          </div>
        </div>
 
@@ -107,13 +115,16 @@
   <img src="./images/location.png">
   <div class=container_about_us> 
     <div class=nuestra_empresa> 
-        <h1>NUESTRA EMPRESA </h1>
-          <p> Nuestra empresa realiza investigación y estudios de tipo cuantitativo y cualitativo en diversos campos del conocimiento con particular enfasis en las areas socio economicas. Acompañamos el desarrollo de su idea y/o proyecto</p>
-          <p>Nuestra empresa cuenta con una amplia experiencia en la elaboración de estudios de mercado asi como de planes de desarrollo, planes de negocio y ananlisis financiero de proyectos. Entre las principales herramientas con las que contamos para los diferentes analisis llevados a cabo en los estudios </p>
+        <h1 class="h1_nuestra_empresa">NUESTRA ORGANIZACION </h1>
+          <p class="p1_nuestra_empresa">
+            Nuestra organizacion realiza investigación y estudios de tipo cuantitativo y cualitativo en diversos campos del conocimiento con particular enfasis en las areas socio economicas. Acompañamos el desarrollo de su idea, y realizamos orientación metodologica para el desarrollo de proyectos de investigación a nivel de pregrado y posgrado.
+          </p>
       </div>
       <div class=quienes_somos> 
-        <h1> QUIENES SOMOS </h1>
-          <p> Nuestra empresa realiza investigación y estudios de tipo cuantitativo y cualitativo en diversos campos del conocimiento con particular enfasis en las areas socio economicas. Acompañamos el desarrollo de su idea y/o proyecto</p>
+        <h1 > QUIENES SOMOS </h1>
+          <p>
+           Un equipo de profesionales con amplia experiencia en el sector publico, privado y en investigacion y docencia universitaria. Contamos con una amplia experincia en la elaboración de estudios de mercado asi como de planes de desarrollo, planes de negocio y ananlisis financiero de proyectos. 
+          </p>
       </div>
     </div>
   </section>
@@ -122,17 +133,20 @@
     <h1>SERVICIOS QUE OFRECEMOS</h1>
     <div class="container">
       <div class="service0">
-        <div><img src="./images/cover3.jpeg"></div>
-        <p>Planes de negocios para distintos sectores productivos</p>
-        <div><img src="./images/bussines_plan.png"></div>
+        <div ><img src="./images/cover7.jpg"></div>
+        <p>Orientacion metodologica y acompañamiento en el desarrollo de proyectos de investigacion a nivel 
+          de pregrado y posgrado
+        </p>
+        <!-- <div><img src="./images/bussines_plan.png"></div> -->
       </div>
       <div class="service1">
         <div class = "naranja1"><img src="./images/economia_naranja.png"></div>
         <p>Orientacion para emprendimientos de economia naranja</p>
-        <div class = "naranja2"><img src="./images/orange.png"></div>
+        <!-- <div class = "naranja2"><img src="./images/orange.png"></div> -->
       </div>
       <div class="service2">
-        <div ><img src="./images/cover7.jpg"></div>
+        <div><img src="./images/cover3.jpeg"></div>
+        <p>Planes de negocios para distintos sectores productivos</p>
         <p>Formulación y evaluacion de proyectos</p>
         <p>Asesoria para fuentes de financiamiento</p>
       </div>
@@ -148,14 +162,55 @@
     </div>
   </section>
 
-  <section id="CONTACTO">
-  <form>
-    <input type="text" name="Name">
-    <input type="text" name="Email">
-    <input type="Website" name="">
-    <input type="text_area" name="Preguntas y Comentarios">
-    <input type="submit" name="" value="Enviar">
-  </form>
-  </section>
+   <section id="contacto">
+      <div class="top">
+        <h1 class="h1-experience">CONTACTANOS</h1>
+      </div>
+      <div id="container">
+        <div class="left-side">
+          <div class="contactos">
+            <h3>INFORMACION DE CONTACTO</h3>
+            <div class=list>
+               <p><span class="glyphicon glyphicon-envelope"></span> multicampusco@gmail.com</p>
+               <p><span class="glyphicon glyphicon-earphone"></span></i> 57 315 261 4217</p>
+               <p><span class="glyphicon glyphicon-globe"></span></i> Bogota-Colombia</p>
+            </div>
+          </div>
+        </div>
+        <div class="center">
+          
+        </div>
+        <div class="right-side">
+          <h3>DEJANOS TUS DATOS, SERÁ UN GUSTO RESOLVER SU NECESIDAD</h3>
+          <div class="frorm-flex">
+              <form
+                action="https://liveformhq.com/form/d2cc76eb-de6d-4fec-b86b-f31d2c317d6a"
+                method="POST" accept-charset="utf-8" role=form>
+
+                <input type="hidden" name="_utf8" value="✓">
+
+                <input type="hidden" name="_redirect" value="https://liveformhq.com/form-test/d2cc76eb-de6d-4fec-b86b-f31d2c317d6a#thank-you">
+
+                <div class='form-group' style="margin:0">
+                  <label for="name">Tu nombre</label>
+                  <input class='form-control' type="text" id="name" name="name">
+                </div>
+
+                <div class='form-group' style="margin:0">
+                  <label for="email">Email</label>
+                  <input class='form-control' type="text" id="email" name="email">
+                </div>
+
+                <div class='form-group' style="margin:0">
+                  <label for="message">Mensaje</label>
+                  <textarea class='form-control' id="message" name="message"></textarea>
+                </div>
+
+                <button type="submit" style="margin-top:25px">Enviar</button>
+              </form>
+          </div>
+        </div>
+      </div>
+    </section>
 </body>
 </html>
